@@ -1,0 +1,30 @@
+body {
+  background-color: rgb(31, 31, 31);
+  color: rgb(170, 218, 250);
+}
+.def {
+  color: rgb(103, 154, 209);
+}
+.type {
+  color: rgba(113, 198, 177);
+}
+.comment {
+  color: rgb(116, 152, 93);
+}
+.keyword {
+  color: rgb(188, 137, 189);
+}
+.punct {
+  color: rgb(204, 204, 204);
+}
+.num {
+  color: rgb(186, 205, 171);
+}
+.str {
+  color: rgb(197, 148, 124);
+}
+
+.logo {
+  background-color: #4b77d1;
+  /* font: Space Mono */
+}

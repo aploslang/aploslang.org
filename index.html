@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="aplos.css" />
+  </head>
+  <body>
+    <pre>
+<span class="comment">/* Aplos */</span>
+
+<span class="comment">// define a struct data type</span>
+<span class="def">pub type data</span> <span class="type">Point</span> <span class="punct">{</span>
+    <span class="def">pub</span> x<span class="punct">:</span> <span class="def">mut</span> <span class="type">f64</span><span class="punct">;</span>
+    <span class="def">pub</span> y<span class="punct">:</span> <span class="def">mut</span> <span class="type">f64</span><span class="punct">;</span>
+<span class="punct">}</span>
+
+<span class="comment">// implement methods for a data type</span>
+<span class="def">impl for</span> <span class="type">Point</span> <span class="punct">{</span>
+    <span class="comment">// public static method</span>
+    <span class="def">pub</span> static_method_name<span class="punct">(</span><span class="punct">)</span><span class="punct">:</span> <span class="type">ReturnType</span> <span class="punct">{ ... }</span>
+    
+    <span class="comment">// public instance method</span>
+    <span class="def">pub</span> instance_method_name<span class="punct">(&</span><span class="def">self</span><span class="punct">)</span><span class="punct">:</span> <span class="type">ReturnType</span> <span class="punct">{ ... }</span>
+<span class="punct">}</span>
+
+<span class="comment">// define a type class</span>
+<span class="def">pub type class</span> <span class="type">Add</span><span class="punct">&lt;</span><span class="type">Rhs</span> <span class="punct">=</span> <span class="def">Self</span><span class="punct">,</span> <span class="type">Result</span> <span class="punct">=</span> <span class="def">Self</span><span class="punct">&gt;</span> <span class="punct">{</span>
+    add<span class="punct">(&</span><span class="def">self</span><span class="punct">,</span> rhs<span class="punct">:</span> <span class="type">Rhs</span><span class="punct">)</span><span class="punct">:</span> <span class="type">Result</span><span class="punct">;</span>
+<span class="punct">}</span>
+
+<span class="comment">// implementation of type class for data type</span>
+<span class="def">impl</span> <span class="type">Add</span> <span class="def">for</span> <span class="type">Point</span> <span class="punct">{</span>
+    add<span class="punct">(lhs<span class="punct">,</span> rhs<span class="punct">:</span> <span class="type">Rhs</span><span class="punct">)</span><span class="punct">:</span> <span class="type">Result</span> <span class="punct">{ ... }</span>
+<span class="punct">}</span>
+
+
+<span class="comment">// define a type variant</span>
+<span class="def">pub type variant</span> <span class="type">Optional</span><span class="punct">&lt;</span><span class="type">T</span><span class="punct">&gt;</span> <span class="punct">{</span>
+    <span class="type">Some</span><span class="punct">(</span><span class="type">T</span><span class="punct">)</span><span class="punct">;</span>
+    <span class="type">None</span><span class="punct">;</span>
+<span class="punct">}</span>
+</pre>
+  </body>
+</html>
