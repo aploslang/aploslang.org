@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  background-color: rgba(31, 31, 31, 0.1);
+}
+
+body {
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid rgba(31, 31, 31, 0.2);
+  background-color: white;
+}
+footer {
+  border-top: 1px solid rgba(31, 31, 31, 0.2);
+  text-align: center;
+  padding: 0.5rem;
+}
+
+article {
+  padding: 0.5rem;
+}
+
+.nav-links {
+  display: flex;
+  /* justify-content: space-between; */
+
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links li {
+  padding: 0.5rem 3rem;
+}
+.nav-links li:nth-child(2) {
+  margin-right: auto;
+  padding: 0.5rem;
+}
+
+.nav-links li.logo {
+  padding: 0.5rem;
+}
+
+img.logo {
+  display: block;
+  border-radius: 15%;
+  height: 50px;
+  width: 50px;
+}
+
+/* 
+body {
+  background-color: rgb(31, 31, 31);
+  color: rgb(170, 218, 250);
+}
+.def {
+  color: rgb(103, 154, 209);
+}
+.type {
+  color: rgba(113, 198, 177);
+}
+.comment {
+  color: rgb(116, 152, 93);
+}
+.keyword {
+  color: rgb(188, 137, 189);
+}
+.punct {
+  color: rgb(204, 204, 204);
+}
+.num {
+  color: rgb(186, 205, 171);
+}
+.str {
+  color: rgb(197, 148, 124);
+}
+
+.logo {
+  background-color: #4b77d1;
+  font: Space Mono
+} */
